@@ -1,0 +1,54 @@
+
+.smallBody{
+    font-size: .8rem;
+    margin: 0;
+}
+ 
+ .museumInfo{
+     float: right;
+     margin: .5rem 2rem;
+ }
+
+ @media only screen and (max-width: 480px) {
+ 
+    .logo{
+        float: none;
+     }
+   }
+ 
+ .cmaWebLink{
+     background-color: #6a7929;
+     border: solid;
+     border-radius: 20% 31% 45% 30%;
+     border-width: .001rem .0125rem;
+     font-family: 'Neucha';
+     font-size: .9rem;
+     margin-top: .5rem;
+     margin-right: .5rem;
+     padding: .5rem 1rem;
+     text-align: center;
+     white-space: nowrap;
+ }
+ .cmaWebLink :hover{
+    color: #c9da2a;
+ }
+
+ .homeLinks{
+    display: flex;
+    flex-direction: row;
+ }
+
+ @media only screen and (max-width: 480px) {
+ 
+    .homeLinks{
+     
+        flex-direction: column;
+     }
+    
+   }
+
+   .headShot{
+       float: right;
+       border-radius: 50%;
+       border: .125rem solid #fff;
+   }

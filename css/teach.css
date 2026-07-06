@@ -1,0 +1,74 @@
+
+.contentContainer{
+    max-height: 40vh;
+    overflow: auto;
+    max-width: 50%;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .contentContainer{
+        max-height: 40vh;
+        overflow: auto;
+        max-width: 100%;
+        margin-left: 0;
+    }
+   }
+
+
+
+
+.accordionTitle {
+    font-family: 'Neucha';
+    font-size: .95rem;
+    letter-spacing: .125rem;
+    line-height: 1.125rem;
+    margin-top: .75rem;
+}
+
+.accordion {
+    cursor: pointer;
+    background-color: none;
+    transition: 0.5s;
+}
+
+.accordionContent {
+    display: none;
+    overflow: hidden;
+    padding-left: 0.75rem;
+    width: 90%;
+}
+
+.accordionContent a{
+    color: #c9da2a;
+    font-family: 'Neucha';
+}
+
+.teachLinks a{
+    color: #c9da2a;
+    font-family: 'Neucha';
+    margin-right: 1rem;
+}
+
+.download{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    display: flex;
+    margin: 2rem 0px;
+    padding-bottom: 2rem;
+}
+
+.download-thum {
+    height: 200px;
+    padding: 0 1rem 0 0;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }

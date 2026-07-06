@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #8F2615;
+    color: #fff;
+    font-family: 'Neucha';
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .125rem;
+    line-height: 1.35rem;
+    /* overflow-y: hidden; */
+}
+
+
+@media only screen and (max-width: 480px) {
+ 
+    body{
+        overflow-y: visible;
+        background-color: #000;
+     }
+   }
+
+a  {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #c9da2a;
+    text-decoration: none;
+}
+
+p{
+    margin: 1.125rem 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* #siteContainer{
+    position: relative;
+    min-height: 100vh;
+} */
+
+/* start header */
+
+.header{
+    background-image: url(../img/bg-timeline-top.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin: 0 auto;
+}
+
+/* @media only screen and (max-width: 1024px) {
+ 
+    .header{
+        background-image: none;
+    }
+    
+   } */
+
+@media only screen and (max-width: 480px) {
+ 
+    .header{
+        background-image: url(../img/mobile-top.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        margin: 0 auto;
+    }
+    
+   }
+
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+@media only screen and (max-width: 980px) {
+ 
+    .headerContent{
+        width: 85%;
+     }
+   }
+
+   @media only screen and (max-width: 480px) {
+ 
+    .logo{
+        width: 13rem;
+     }
+   }
+
+   .contentRight{
+    /* margin-left: 40rem; */
+    margin-top: 3rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+   }
+
+   @media only screen and (max-width: 1024px) {
+ 
+    .contentRight{
+        margin-left: 0;
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+    
+       }
+   }
+
+   /* @media only screen and (max-width: 1024px) {
+ 
+    .topLinks{
+        margin-left: 9rem;;
+
+    
+       }
+   } */
+
+   .contentLeft{
+    display: flex;
+    z-index: 1;
+    /* margin-left: 2rem; */
+    gap: 3rem;
+   }
+
+   @media only screen and (max-width: 480px) {
+ 
+    .contentLeft{
+        margin-left: 0;
+     }
+   }
+
+
+   .homeButton{
+       display: flex;
+       flex-direction: row;
+   }
+
+   .back{
+    position: fixed;
+    margin: 3rem 0 0 1rem;
+    z-index: -1;
+    left: 5rem;
+    top: 2rem;
+}
+
+
+
+
+/* end header */
+
+/* start nav */
+
+.mainNav, .seeWork{
+    font-size: 1rem;
+    letter-spacing: .08rem;
+    text-transform: lowercase;
+}
+
+.mainNav{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainNavItem{
+    background-color: black;
+    border: solid #fff .0125rem;
+    margin: .25rem;
+    max-width: fit-content;
+    min-width: fit-content;
+    padding: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: lowercase;
+}
+
+@media only screen and (max-width: 480px) {
+ 
+    .mainNavItem{
+        white-space: unset;
+   }
+}
+
+.one{
+    border-radius: 35% 45% 30% 41%;
+}
+
+.two{
+    border-radius: 26% 44% 46% 35%;
+}
+
+.three{
+    border-radius: 32% 25% 28% 35%;
+}
+
+.four{
+    border-radius: 29% 33% 39% 34%;
+}
+
+.five{
+    border-radius: 33% 39% 37% 32%;
+    margin-bottom: .5rem;
+}
+
+.six{
+    border-radius: 15% 30% 21% 35%;
+}
+
+.mainNavItem a{
+    color: #fff;
+}
+
+.mainNavItem :hover{
+    color: #c9da2a;
+
+}
+
+.mainNavItem.active a{
+    color:#c9da2a;
+}
+
+.mainNavItem.active {
+    border: solid #c9da2a .0125rem;
+    color: #c9da2a;
+}
+
+/* end nav */
+
+/* start mobile nav */
+
+.menuButton{
+    border-radius: 26% 44% 46% 35%;
+    border: solid #fff .125rem;
+    background-color: #000;
+    padding: 1.5rem;
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+ 
+    .menuButton{
+        display: block;
+        margin-left: 9rem;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+ 
+    .menuButton{
+        padding: .5rem;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+ 
+    .menuButton{
+        margin-left: .5rem;
+   }
+}
+
+   @media only screen and (max-width: 980px) {
+ 
+    .topLinks{
+         display: none;
+     }
+   }
+
+/* end mobile nav */
+
+
+
+/* start basic page */
+
+.pageImage{
+        display: block;
+        z-index: -1;
+        width: 100%;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+ 
+    .pageImage{
+         display: none;
+     }
+   }
+
+   .pageImageMobile{
+    display: none;
+    z-index: -1;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+ 
+    .pageImageMobile{
+         display: block;
+     }
+   }
+
+   @media only screen and (max-width: 480px) {
+ 
+    .pageImageMobile{
+         display:none;
+     }
+   }
+
+  #pageContainer {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    transform: translateY(-150px);
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+    #pageContainer{
+        max-width: 100vw;
+     }
+   }
+
+   
+@media only screen and (max-width: 480px) {
+ 
+    #pageContainer{
+        transform: none;
+     }
+   }
+
+
+.mainContainer{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: flex-start;
+    position: absolute;
+    top: 25%;
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+    .mainContainer{
+         margin: 0 5rem;
+     }
+   }
+
+   @media only screen and (max-width: 480px) {
+ 
+    .mainContainer{
+         margin: 2rem 2rem;
+         position: unset;
+         top: 25%;
+     }
+   }
+
+   .sidebarContainer{
+    z-index: 1;
+    transform: translate(-40px, -25px);
+    height: fit-content;
+}
+
+
+   @media only screen and (max-width: 980px) {
+ 
+    .sidebarContainer{
+         display: none;
+     }
+   }
+
+   .contentContainer {
+    max-height: 40vh;
+    overflow: auto;
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 980px) {
+ 
+    .contentContainer{
+    margin: 0 auto;
+    max-width: 100%;
+     }
+   }
+
+   @media only screen and (max-width: 480px) {
+ 
+    .contentContainer{
+    max-height: 100%;
+     }
+   }
+
+   .contentTitle{
+    font-size: 1.25rem;
+    font-family: 'Neucha';
+    letter-spacing: .125rem;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+
+   /* end basic page */
+
+   /* start modal */
+
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    transform: translateX(-40px);
+
+}
+
+.modal-open{
+    margin-top: 1rem;
+    text-align: center;
+  } 
+.modal-open:hover{
+  color:#c9da2a;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #000;
+    margin: auto;
+    padding: 3rem;
+    /* border: 1px solid #888; */
+    max-width: fit-content;
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 3rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #c9da2a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 0 .5rem 3rem 0;
+    color: white;
+}
+
+.modal-body {
+    overflow: auto;
+    padding: 2rem;
+    color: #fff;
+}
+
+.modal-footer {
+    padding: 3rem .5rem 0 0 ;
+    color: white;
+}
+
+
+/* end modal */
+
+/* start overlay */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 30px; */
+  }
+  
+  .overlay a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #c9da2a;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 2rem;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    /* font-size: 40px; */
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  /* end overlay */
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff; 
+    border-radius: 25% 30% 25% 20%;
+
+  }
+
+  
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #000; 
+    cursor: pointer;
+  } */
+
+/* 
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    display: block;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #7f1d1d;
+} */
